@@ -1,4 +1,4 @@
-# Install Python + Visual Studio Code
+# Day 1 - Install Python + Visual Studio Code
 
 # Use Python 3.14.x
 
