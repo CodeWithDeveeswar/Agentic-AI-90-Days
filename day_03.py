@@ -42,6 +42,7 @@ print() # ----------------------------------------------------------------------
 # Practice Exercises
 
 # Exercise 1 - Create Strings
+
 # Create variables called name, city, learning_topic, and goal. Print all four values.
 
 name = "Deveeswar"
@@ -54,6 +55,7 @@ print(name+", "+city+", "+learning_topic+", "+goal)
 print() # --------------------------------------------------------------------------------------------
 
 # Exercise 2 - type()
+
 # Create topic = "Agentic AI". Print its value and datatype.
 
 topic = "Agentic AI"
@@ -62,6 +64,7 @@ print(topic, type(topic))
 print() # --------------------------------------------------------------------------------------------
 
 # Exercise 3 - f-string
+
 # Create name and topic. Produce: Hi Sathish, today you are learning Agentic AI.
 
 name = "Devesh"
@@ -73,6 +76,7 @@ print(message)
 print() # --------------------------------------------------------------------------------------------
 
 # Exercise 4 - len()
+
 # Find the length of "Agentic AI". Then find the length of your own name.
 
 topic = "Agentic AI"
@@ -84,6 +88,7 @@ print(len(name))
 print() # --------------------------------------------------------------------------------------------
 
 # Exercise 5 - Indexing
+
 # Given model = "OpenAI", print the first character, third character, and last character.
 
 model = "OpenAI"
@@ -95,6 +100,7 @@ print(model[-1])
 print() # --------------------------------------------------------------------------------------------
 
 # Exercise 6 - Slicing
+
 # Given course = "Agentic AI Course", extract only Agentic AI.
 
 course = "Agentic AI Course"
@@ -105,6 +111,7 @@ print(course[:10])
 print() # --------------------------------------------------------------------------------------------
 
 # Exercise 7 - Clean input
+
 # Convert " WHAT IS LANGGRAPH? " to "what is langgraph?".
 
 question = " WHAT IS LANGGRAPH? "
@@ -114,6 +121,7 @@ print(Clean_question)
 print() # --------------------------------------------------------------------------------------------
 
 # Exercise 8 - Replace
+
 # Change "I am learning Python" into "I am learning Agentic AI" using replace().
 
 text = "I am learning Python"
@@ -123,6 +131,7 @@ print(new_text)
 print() # --------------------------------------------------------------------------------------------
 
 # Exercise 9 - Split
+
 # Convert "Python,LLM,RAG,Agents" into a list using split().
 
 text = "Python,LLM,RAG,Agents"
@@ -132,6 +141,7 @@ print(words)
 print() # --------------------------------------------------------------------------------------------
 
 # Exercise 10 - Join
+
 # Join ["Python", "LLM", "RAG", "Agents"] using " -> ".
 
 topics = ["Python", "LLM", "RAG", "Agents"]
@@ -143,6 +153,7 @@ print() # ----------------------------------------------------------------------
 # Three-Level Challenge
 
 # Level 1 - Easy
+
 # Create name, topic, and day. 
 # Use an f-string to print: Hi <name>, this is Day 3 and you are learning <topic>.
 
@@ -156,6 +167,7 @@ print(message)
 print() # --------------------------------------------------------------------------------------------
 
 # Level 2 - Modify
+
 # Take question = " WHAT IS AN AI AGENT? ". 
 # Remove spaces, convert to lowercase, replace ai agent with agentic ai, then print the final string.
 
@@ -166,6 +178,7 @@ print(question)
 print() # --------------------------------------------------------------------------------------------
 
 # Level 3 - AI Prompt Builder
+
 # Create variables topic, audience, and style. Build a prompt using an f-string. 
 # Example output: Explain RAG to a beginner using a simple real-world example.
 
