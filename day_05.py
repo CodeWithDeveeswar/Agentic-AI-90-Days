@@ -11,7 +11,7 @@ print("Role:", message["role"])
 print("Message:", message["content"])
 print("Priority:", message["priority"])
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Practice Exercises
 
@@ -27,40 +27,40 @@ student = {
 
 print(student)
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Exercise 2: Print only the name and topic values from student.
 
 print(student["name"])
 print(student["topic"])
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Exercise 3: Change completed from False to True.
 
 student["completed"] = True
 print(student)
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Exercise 4: Add a new key called level with value "Beginner".
 
 student["level"] = "Beginner"
 print(student)
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Exercise 5: Use len() to print the number of keys.
 
 print(len(student))
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Exercise 6: Use get() to safely read a key called score and return "Not available" when missing.
 
 print(student.get("score", "Not available"))
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Exercise 7: Use keys(), values(), and items() and observe the output.
 
@@ -68,14 +68,14 @@ print(student.keys())
 print(student.values())
 print(student.items())
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Exercise 8: Loop through the dictionary and print each key and value.
 
 for key, value in student.items():
     print(key, "=", value)
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Exercise 9: Create a model_config dictionary with model, temperature, and max_tokens.
 
@@ -87,7 +87,7 @@ model_config = {
 
 print(model_config)
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Exercise 10: Create a message dictionary with role and content, 
 # then print: Role: user and Message: <your content>.
@@ -100,7 +100,7 @@ message = {
 print("Role:", message["role"])
 print("Message:", message["content"])
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Three-Level Challenge
 
@@ -117,7 +117,7 @@ model = {
 for value in model.values():
     print(value)
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Level 2 - Modify
 
@@ -127,7 +127,7 @@ model.update({"max_tokens": 500, "temperature": 0.3})
 model.pop("active")
 print(model)
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Level 3 - Challenge
 
@@ -143,7 +143,7 @@ messages = [
 for message in messages:
     print(message["role"], ":", message["content"])
 
-print()
+print() # ------------------------------------------------------------------------------------------
 
 # Mini Project - Conversation Data
 
@@ -157,3 +157,29 @@ messages = [
 
 for message in messages:
     print(message["role"], ":", message["content"])
+
+# --------------------------------------------------------------------------------------------------
+
+# Quick Quiz
+
+""" 
+    1. Which brackets create a dictionary?
+
+        Ans: B) {}
+
+    2. What does person["name"] do?
+
+        Ans: C) Reads the value for key name
+
+    3. Which method safely reads a possibly missing key?
+
+        Ans: C) get()
+
+    4. What does dict.items() return?
+
+        Ans: C) Key-value pairs
+
+    5. Which pattern is common for chat messages?
+
+        Ans: A) List of dictionaries
+"""
