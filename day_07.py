@@ -1,4 +1,4 @@
-# Day 6 - Python Loops
+# Day 7 - Python Loops
 
 # Practice Exercises
 
