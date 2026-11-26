@@ -161,15 +161,15 @@ print("Next year, you will be", age + 1, "years old.")
 # Quick Quiz
 
 """ 
-    1. What datatype is 0.8? A) str B) int C) float D) bool
+    1. What datatype is 0.8? 
 
         Ans: C) float
 
-    2. Which is a valid variable name? A) 2model B) model-name C) model_name D) model name
+    2. Which is a valid variable name? 
 
         Ans: C) model_name
 
-    3. What datatype is True? A) str B) bool C) int D) float
+    3. What datatype is True? 
 
         Ans: B) bool
 
