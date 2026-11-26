@@ -1,1 +1,1 @@
-# Day 8 - Python Loops
+# Day 8 - Python Functions
