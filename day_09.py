@@ -10,8 +10,6 @@
 # value = multiply(3, 4)
 # print(value) # None
 
-# Fix: add return result
-
 def multiply(a, b):
     result = a * b
     return result
