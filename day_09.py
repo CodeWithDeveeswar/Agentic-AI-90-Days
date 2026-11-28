@@ -171,3 +171,89 @@ print(result2)
 print()
 
 # Three-level challenge
+
+# Level 1 - Easy
+
+# Create introduce(name, topic="Agentic AI") and return a sentence.
+
+def introduce(name, topic="Agentic AI"):
+    return f'{name} is learning {topic}'
+
+print(introduce("Devesh"))
+print(introduce("Akilan", "RAG"))
+
+print()
+
+# Level 2 - Modify
+
+# Create create_user(name, level="Beginner", active=True) and return a dictionary.
+
+def create_user(name, level="Beginner", active=True):
+    return {
+        'name': name,
+        'level': level,
+        'active': active
+    }
+
+print(create_user("Devesh"))
+print(create_user("Akilan", "Advanced", False))
+
+print()
+
+# Level 3 - Agentic AI
+
+# Create execute_tool(tool, query, top_k=3). 
+# Return a search-style dictionary for search, a message for calculator, and an error dictionary for unknown tools.
+
+def execute_tool(tool, query, top_k=3):
+    tool = tool.lower()
+
+    if tool == "search":
+        return {
+            "status": "success",
+            "tool": "search",
+            "query": query,
+            "top_k": top_k,
+            "results": []
+        }
+
+    elif tool == "calculator":
+        return "Calculator tool selected. Ready to calculate."
+
+    else:
+        return {
+            "status": "error",
+            "message": f"Unknown tool: {tool}"
+        }
+
+print(execute_tool("search", "What is Agentic AI?"))
+print(execute_tool("calculator", "10 + 20"))
+print(execute_tool("weather", "Weather in Chennai"))
+
+print()
+
+# Mini project - Tool Request Builder
+
+def build_tool_request(tool_name, **inputs):
+    if not tool_name:
+        return {'status': 'error', 'message': 'tool_name is required'}
+
+    return {
+        'status': 'ready',
+        'tool': tool_name,
+        'inputs': inputs
+    }
+
+search_request = build_tool_request('search', query='What is RAG?', top_k=3)
+print(search_request)
+
+weather_request = build_tool_request('weather', city='Coimbatore', country='India', unit='celsius')
+print(weather_request)
+
+calculator_request = build_tool_request('calculator', operation='multiply', num1=10, num2=5)
+print(calculator_request)
+
+pdf_request = build_tool_request('', file_name='report.pdf', operation='extract_text', page_number=2)
+print(pdf_request)
+
+# Quick Quiz
